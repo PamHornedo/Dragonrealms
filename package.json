@@ -1,0 +1,26 @@
+{
+  "name": "dragonrealms-capstone",
+  "version": "1.0.0",
+  "description": "This is  my week 7 capstone project",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && npx live-server --port=8080 --open=./index.html"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PamHornedo/Dragonrealms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PamHornedo/Dragonrealms/issues"
+  },
+  "homepage": "https://github.com/PamHornedo/Dragonrealms#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "live-server": "^1.2.1"
+  }
+}
