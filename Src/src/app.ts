@@ -12,8 +12,8 @@ function createCard(c: Dragon){
 	<h3>${escapeHtml(c.name)}</h3>
 	<p><strong>Type:</strong> ${escapeHtml(c.type)}</p>
 	<p><strong>Age:</strong> ${c.age ?? '—'}</p>
-    <p><strong>Element:</strong> ${escapeHtml(c.element)}</p>}
-    <p><strong>Special Ability:</strong> ${escapeHtml(c.ability)}</p>}
+    <p><strong>Element:</strong> ${escapeHtml(c.element)}</p>
+    <p><strong>Special Ability:</strong> ${escapeHtml(c.ability)}</p>
   `;
   return el;
 }
