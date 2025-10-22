@@ -1,5 +1,5 @@
-import { createCard } from "./app";
-import { Dragon } from "./models/Dragon";
+import { createCard } from "./app.js";
+import { Dragon } from "./models/Dragon.js";
 
 const nameInput = document.getElementById('nameInput') as HTMLInputElement;
 const typeInput = document.getElementById('typeInput') as HTMLInputElement;
