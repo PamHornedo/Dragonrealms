@@ -1,11 +1,9 @@
-class Dragon {
-	constructor(public name: string, public type: string, public age: number, public element: string, public ability: string) {}
-}
+import { Dragon } from "./models/Dragon";
 
-const form = document.getElementById('char-form') as HTMLFormElement | null;
-const list = document.getElementById('dragons') as HTMLDivElement | null;
+const form = document.getElementById('char-form') as HTMLFormElement;
+const list = document.getElementById('dragons') as HTMLDivElement;
 
-function createCard(c: Dragon){
+export function createCard(c: Dragon){
   const el = document.createElement('div');
   el.className = 'dragon';
   el.innerHTML = `
@@ -35,7 +33,7 @@ if (form && list){
     const ability = (data.get('ability') || '').toString().trim();
    
     if (!name || !type || !age || !element || !ability){
-      alert('Please fill a form fields.');
+      alert('Please fill all form fields.');
       return;
     }
     
