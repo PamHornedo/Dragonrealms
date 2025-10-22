@@ -33,17 +33,15 @@ if (form && list){
     const age = ageRaw ? Number(ageRaw) : undefined;
     const element = (data.get('element') || '').toString().trim();
     const ability = (data.get('ability') || '').toString().trim();
-
+   
     if (!name || !type || !age || !element || !ability){
       alert('Please fill a form fields.');
       return;
     }
-
-    // Instantiate a Character and render it
+    
     const character = new Dragon(name, type, age, element, ability);
     const card = createCard(character);
     list.prepend(card);
-    // Clear the form so the user can add another character quickly
-    form.reset();
+    form.reset();    
   });
 }
