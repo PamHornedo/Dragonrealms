@@ -1,4 +1,5 @@
-import { Dragon } from "./models/Dragon";
+import { addLocalStorage } from "./storage.js";
+import { Dragon } from "./models/Dragon.js";
 
 const form = document.getElementById('char-form') as HTMLFormElement;
 const list = document.getElementById('dragons') as HTMLDivElement;
@@ -40,6 +41,7 @@ if (form && list){
     const character = new Dragon(name, type, age, element, ability);
     const card = createCard(character);
     list.prepend(card);
-    form.reset();    
+    addLocalStorage(character);
+    form.reset();
   });
 }
