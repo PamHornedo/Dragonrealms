@@ -3,6 +3,7 @@ import { Dragon } from "./models/Dragon.js";
 
 const form = document.getElementById('char-form') as HTMLFormElement;
 const list = document.getElementById('dragons') as HTMLDivElement;
+const button = document.querySelector('.actions') as HTMLDivElement;
 
 export function createCard(c: Dragon){
   const el = document.createElement('div');
@@ -22,7 +23,7 @@ function escapeHtml(s: string){
 }
 
 if (form && list){
-  form.addEventListener('submit', (ev) => {
+  button.addEventListener('click', (ev) => {
     ev.preventDefault();
     const data = new FormData(form);
     
