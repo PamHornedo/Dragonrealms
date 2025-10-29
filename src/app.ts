@@ -1,5 +1,5 @@
-import { addLocalStorage } from "./storage.js";
-import { Dragon } from "./models/Dragon.js";
+import { addLocalStorage } from './storage';
+import { Dragon } from "./models/Dragon";
 
 const form = document.getElementById('char-form') as HTMLFormElement;
 const list = document.getElementById('dragons') as HTMLDivElement;

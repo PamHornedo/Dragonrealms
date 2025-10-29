@@ -38,6 +38,13 @@ main {
   border: 1px solid rgba(212, 168, 0, 0.06);
 }
 
+#dragons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 label {
   display: block;
   margin: 0.5rem 0;
